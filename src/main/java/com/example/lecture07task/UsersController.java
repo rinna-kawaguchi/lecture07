@@ -31,7 +31,7 @@ public class UsersController {
     }
 
     @DeleteMapping("/users/{id}")
-    public ResponseEntity<Map<String, String>> delete(@PathVariable("id") int id, @RequestBody UpdateForm users) {
+    public ResponseEntity<Map<String, String>> delete(@PathVariable("id") int id) {
         return ResponseEntity.ok(Map.of("message", "user successfully deleted"));
     }
 
